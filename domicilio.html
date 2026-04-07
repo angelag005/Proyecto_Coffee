@@ -1,84 +1,157 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Coffe & time</title>
     <link rel="stylesheet" href="./CSS/domicilio.css">
- </head>
- <body>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo-container">
+            <div class="logo-top">
+                <img src="./img_Coffee/logo1.jpeg" alt="logo">
+                <div class="text-logo">
+                    <h2>Coffee & Time</h2>
+                </div>
+            </div>
+        </div>
 
 
-<form action="menu.html">
-    <div class="logo-form">
-      <img src="./img_Coffee/logo1.jpeg" alt="Logo Coffee">
-     <span>Coffee & Time</span>
+        <nav class="menu">
+            <a href="./index.html">INICIO</a>
+            <a href="./quienes_somos.html">QUIENES SOMOS</a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">MENU</a>
+                <div class="dropdown-content">
+                    <a href="./bebidas.html">BEBIDAS</a>
+                    <a href="./SesionPrincipal.html">COMIDAS</a>
+                </div>
+            </div>
+            <a href="./domicilio.html">DOMICILIO</a>
+            <a href="./comentario.html">COMENTARIOS</a>
+        </nav>
+
+        <div class="acciones">
+            <a href="./InicioSesion.html"><i class="fa-solid fa-user"></i></a>
+            <div class="carrito">
+                <a href="./carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="contenedorDom">
+        <form action="SesionPrincipal.html">
+            <div class="logo-form">
+                <img src="./img_Coffee/logo1.jpeg" alt="Logo Coffee">
+                <span>Coffee & Time</span>
+            </div>
+
+            <!-- 👤 Cliente -->
+            <h3> Datos del cliente</h3>
+
+            <label>Nombre completo:</label>
+            <input type="text" name="nombre" required>
+
+            <label>Número de teléfono:</label>
+            <input type="tel" name="telefono" required>
+
+            <!-- 📍 Dirección -->
+            <h3> Dirección de entrega</h3>
+
+            <label>Municipio:</label><br>
+            <input type="text" name="municipio" required>
+
+            <label>Dirección (calle, carrera, número):</label>
+            <input type="text" name="direccion" required>
+
+            <label>Barrio:</label>
+            <input type="text" name="barrio" required>
+
+            <!-- 🏢 Vivienda -->
+            <h3> Tipo de vivienda</h3>
+
+            <label>Tipo de vivienda:</label>
+            <select name="tipo_vivienda" onchange="mostrarApartamento(this.value)">
+                <option value="casa">Casa</option>
+                <option value="apartamento">Apartamento</option>
+            </select>
+
+            <div id="apartamentoInfo" style="display:none;">
+                <label>Número de piso del a apartamento:</label>
+                <input type="text" name="apartamento">
+            </div>
+
+            <!-- 🏘️ Conjunto -->
+            <h3>Información adicional</h3>
+
+            <label>¿Vive en conjunto?</label>
+            <select name="conjunto" onchange="mostrarConjunto(this.value)">
+                <option value="no">No</option>
+                <option value="si">Sí</option>
+            </select>
+
+            <div id="datosConjunto" style="display:none;">
+                <label>Nombre del conjunto:</label>
+                <input type="text" name="nombre_conjunto">
+
+                <label>Dirección del conjunto:</label>
+                <input type="text" name="direccion_conjunto">
+
+                <button type="submit">Continuar al menú</button>
+
+                <script>
+
+                    function mostrarConjunto(valor) {
+                        let campo = document.getElementById("datosConjunto");
+                        campo.style.display = (valor === "si") ? "block" : "none";
+                    }
+
+                    function mostrarApartamento(valor) {
+                        let campo = document.getElementById("apartamentoInfo");
+                        campo.style.display = (valor === "apartamento") ? "block" : "none";
+                    }
+                </script>
+            </div>
+        </form>
     </div>
 
-    <!-- 👤 Cliente -->
-    <h3>👤 Datos del cliente</h3>
+    <footer class="footer">
+        <div class="footer-container">
 
-    <label>Nombre completo:</label>
-    <input type="text" name="nombre" required>
+            <!-- Información del café -->
+            <div class="footer-about">
+                <h3>Coffee & Time</h3>
+                <p>Coffee and time. No hurry</p>
+                <p>123 Amistan Street, Your City</p>
+            </div>
 
-    <label>Número de teléfono:</label>
-    <input type="tel" name="telefono" required>
+            <!-- Horarios -->
+            <div class="footer-hours">
+                <h3>Horario</h3>
+                <ul>
+                    <li>Lunes – Viernes: 8:00 AM – 5:00 PM</li>
+                    <li>Sábado – Domingo: 8:00 AM – 4:00 PM</li>
+                </ul>
+            </div>
 
-    <!-- 📍 Dirección -->
-    <h3>📍 Dirección de entrega</h3>
+            <!-- Redes sociales -->
+            <div class="footer-social">
+                <h3>Síguenos</h3>
+                <img src="./img_Coffee/logo de facebook (1).jpg" alt="Facebook" class="social-icon">
+                <img src="./img_Coffee/logo de instragra.jpg" alt="Instagram" class="social-icon">
+                <img src="./img_Coffee/logo de whatsapp.jpg" alt="whatsapp" class="social-icon">
+            </div>
+        </div>
 
-    <label>Municipio:</label><br>
-<input type="text" name="municipio" required>
-
-    <label>Dirección (calle, carrera, número):</label>
-    <input type="text" name="direccion" required>
-
-    <label>Barrio:</label>
-    <input type="text" name="barrio" required>
-    
-    <!-- 🏢 Vivienda -->
-    <h3>🏢 Tipo de vivienda</h3>
-
-    <label>Tipo de vivienda:</label>
-    <select name="tipo_vivienda" onchange="mostrarApartamento(this.value)">
-        <option value="casa">Casa</option>
-        <option value="apartamento">Apartamento</option>
-    </select>
-
-    <div id="apartamentoInfo" style="display:none;">
-        <label>Número de piso del a apartamento:</label>
-        <input type="text" name="apartamento">
-    </div>
-
-    <!-- 🏘️ Conjunto -->
-    <h3>🏘️ Información adicional</h3>
-
-    <label>¿Vive en conjunto?</label>
-    <select name="conjunto" onchange="mostrarConjunto(this.value)">
-        <option value="no">No</option>
-        <option value="si">Sí</option>
-    </select>
-
-    <div id="datosConjunto" style="display:none;">
-        <label>Nombre del conjunto:</label>
-        <input type="text" name="nombre_conjunto">
-
-        <label>Dirección del conjunto:</label>
-        <input type="text" name="direccion_conjunto">
-
-        <button type="submit">☕ Continuar al menú</button>
-        <script>
-            
-function mostrarConjunto(valor) {
-    let campo = document.getElementById("datosConjunto");
-    campo.style.display = (valor === "si") ? "block" : "none";
-}
-
-function mostrarApartamento(valor) {
-    let campo = document.getElementById("apartamentoInfo");
-    campo.style.display = (valor === "apartamento") ? "block" : "none";
-}
-</script>
-    </div>
- </body>
- </html>
+        <!-- Nota de derechos -->
+        <div class="footer-note">
+            <p>© 2026 Coffee & Time — Todos los derechos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>

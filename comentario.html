@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentarios</title>
+    <link rel="stylesheet" href="./CSS/comentario.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+        <!-- NAVBAR -->
+        <header class="navbar">
+        <div class="logo-container">
+            <div class="logo-top">
+                <img src="./IMAGENES/logo.jpeg" alt="logo">
+                <div class="text-logo">
+                    <h2>Coffee & Time</h2>
+                </div>
+            </div>
+        </div>
+
+
+        <nav class="menu">
+            <a href="./index.html">INICIO</a>
+            <a href="./quienes_somos.html">QUIENES SOMOS</a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">MENU</a>
+                <div class="dropdown-content">
+                    <a href="./bebidas.html">BEBIDAS</a>
+                    <a href="./SesionPrincipal.html">COMIDAS</a>
+                </div>
+            </div>
+            <a href="./domicilio.html">DOMICILIO</a>
+            <a href="./comentario.html">COMENTARIOS</a>
+        </nav>
+
+        <div class="acciones">
+            
+        </div>
+    </header>
+
+    <br>
+    <br>
+    <br>
+    <div class="comment-session">
+
+        <!-- Formulario -->
+        <form id="comment-form" class="comment-box">
+            <div class="user">
+                <div class="image"><img src="../IMG/gatito comiendo.jpg" alt="Tu foto"></div>
+                <div class="name">angela</div>
+            </div>
+            <textarea id="comment-text" placeholder="Escribe tu comentario..."></textarea>
+
+            <!-- Estrellas -->
+            <div class="rating" id="rating">
+                <i class="fa fa-star-o" data-value="1"></i>
+                <i class="fa fa-star-o" data-value="2"></i>
+                <i class="fa fa-star-o" data-value="3"></i>
+                <i class="fa fa-star-o" data-value="4"></i>
+                <i class="fa fa-star-o" data-value="5"></i>
+            </div>
+
+            <button type="submit" class="comment-submit">Comentar</button>
+        </form>
+
+        <!-- Aquí aparecerán los comentarios -->
+        <div id="comments-list"></div>
+    </div>
+
+    <script src="./JS/comentario.js"></script>
+</body>
+</html>
