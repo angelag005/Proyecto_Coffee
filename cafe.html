@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/cafe.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo-container">
+            <div class="logo-top">
+                <img src="./IMG/logo.jpeg" alt="logo">
+                <div class="text-logo">
+                    <h2>Coffee & Time</h2>
+                </div>
+            </div>
+        </div>
+
+
+        <nav class="menu">
+            <a href="#">INICIO</a>
+            <a href="#">QUIENES SOMOS</a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">MENU</a>
+                <div class="dropdown-content">
+                    <a href="./bebidas.html">BEBIDAS</a>
+                    <a href="#">COMIDAS</a>
+                </div>
+            </div>
+            <a href="./domicilio.html">DOMICILIO</a>
+        </nav>
+
+        <div class="acciones">
+            <a href="InicioSesion.html"><i class="fa-solid fa-user"></i></a>
+            <a href="#" id="btn-carrito">
+                <i class="fa-solid fa-cart-shopping"></i> 
+                <span id="cart-count" class="cart-count">0</span>
+            </a>
+        </div>
+
+    </header>
+
+    <section class="contenedor">
+        <div class="contenedor-items">
+            <div class="articulo" data-nombre="Cafe Americano" data-presio="4000">
+                <img src="./IMG/americano.jpg" alt="" class="img-item">
+                <span class="titulo-item">Cafe Americano</span>
+                <p class="descripcion">Clásico café americano, suave y ligero, con un sabor equilibrado ideal para cualquier momento del día.</p>
+                <span class="precio">$7.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="articulo" data-nombre="Capuchino" data-presio="4000">
+                <img src="./IMG/capuchino.jpg" alt="" class="img-item">
+                <span class="titulo-item">Capuchino</span>
+                <p class="descripcion">Cremoso capuchino con espuma suave y un toque intenso de café, perfecto para disfrutar con calma.</p>
+                <span class="precio">$10.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="articulo" data-nombre="Expresso" data-presio="4000">
+                <img src="./IMG/expresso.jpg" alt="" class="img-item">
+                <span class="titulo-item">Expresso</span>
+                <p class="descripcion">Intenso café espresso, de sabor fuerte y concentrado, ideal para los amantes del café puro.</p>
+                <span class="precio">$8.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="articulo" data-nombre="Latte A Las Rocas" data-presio="4000">
+                <img src="./IMG/latte.jpg" alt="" class="img-item">
+                <span class="titulo-item">Latte A Las Rocas</span>
+                <p class="descripcion">Refrescante latte a las rocas, mezcla de café y leche con hielo, suave y perfecto para días cálidos.</p>
+                <span class="precio">$7.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="articulo" data-nombre="Cafe Mocha" data-presio="4000">
+                <img src="./IMG/mocha.jpg" alt="" class="img-item">
+                <span class="titulo-item">Cafe Mocha</span>
+                <p class="descripcion">Delicioso café mocha, combinación de café y chocolate, cremoso y con un toque dulce irresistible.</p>
+                <span class="precio">$9.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="articulo" data-nombre="Cafe Con Chocolate Blanco" data-presio="4000">
+                <img src="./IMG/blanco.jpg" alt="" class="img-item">
+                <span class="titulo-item">Cafe Con Chocolate Blanco</span>
+                <p class="descripcion">Suave café con chocolate blanco, cremoso y dulce, con un sabor delicado que encanta.</p>
+                <span class="precio">$8.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="articulo" data-nombre="Latte" data-presio="4000">
+                <img src="./IMG/latte (2).jpg" alt="" class="img-item">
+                <span class="titulo-item">Latte</span>
+                <p class="descripcion">Clásico latte, suave mezcla de café y leche, cremoso y perfecto para cualquier ocasión.</p>
+                <span class="precio">$9.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="articulo" data-nombre="afe Con Leche" data-presio="4000">
+                <img src="./IMG/leche.jpg" alt="" class="img-item">
+                <span class="titulo-item">Cafe Con Leche</span>
+                <p class="descripcion">Tradicional café con leche, equilibrado y reconfortante, ideal para empezar el día.</p>
+                <span class="precio">$32.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="articulo" data-nombre="Cafe Cortado" data-presio="4000">
+                <img src="./IMG/cortado.jpg" alt="" class="img-item">
+                <span class="titulo-item">Cafe Cortado</span>
+                <p class="descripcion">Café cortado, intenso y balanceado con un toque de leche, perfecto para un sabor más suave.</p>
+                <span class="precio">$42.800</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="articulo" data-nombre="Flat White" data-presio="4000">
+                <img src="./IMG/flat.jpg" alt="" class="img-item">
+                <span class="titulo-item">Flat White</span>
+                <p class="descripcion">Elegante flat white, café suave con leche cremosa y textura sedosa, ideal para disfrutar despacio.</p>
+                <span class="precio">$26.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="articulo" data-nombre="Cafe Macchiato" data-presio="4000">
+                <img src="./IMG/macchiato.jpg" alt="" class="img-item">
+                <span class="titulo-item">Cafe Macchiato</span>
+                <p class="descripcion">Intenso café macchiato con un toque de leche, pequeño pero lleno de sabor.</p>
+                <span class="precio">$26.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="articulo" data-nombre="Jugo De Lulo" data-presio="4000">
+                <img src="./IMG/vienes.jpg" alt="" class="img-item">
+                <span class="titulo-item">Cafe Vienés</span>
+                <p class="descripcion">Delicioso café con crema batida en la parte superior, suave, dulce y perfecto para consentirte.</p>
+                <span class="precio">$36.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="articulo" data-nombre="Jugo De Lulo" data-presio="4000">
+                <img src="./IMG/irlandes.jpg" alt="" class="img-item">
+                <span class="titulo-item">Cafe Irlandes</span>
+                <p class="descripcion">Aromático café caliente con un toque de crema, intenso y perfecto para un momento especial.</p>
+                <span class="precio">$30.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="articulo" data-nombre="Jugo De Lulo" data-presio="4000">
+                <img src="./IMG/bombon.jpg" alt="" class="img-item">
+                <span class="titulo-item">Cafe Bombon</span>
+                <p class="descripcion">Dulce café con leche condensada, cremoso y con un contraste perfecto entre lo intenso y lo dulce.</p>
+                <span class="precio">$28.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="articulo" data-nombre="Jugo De Lulo" data-presio="4000">
+                <img src="./IMG/frappe.jpg" alt="" class="img-item">
+                <span class="titulo-item">Cafe Frappé</span>
+                <p class="descripcion">Refrescante café frío batido con hielo, suave, cremoso y perfecto para días calurosos.</p>
+                <span class="precio">$32.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="articulo" data-nombre="Jugo De Lulo" data-presio="4000">
+                <img src="./IMG/miel.jpg" alt="" class="img-item">
+                <span class="titulo-item">Cafe Miel</span>
+                <p class="descripcion">Suave café endulzado con miel natural, con un sabor delicado y un toque diferente y especial.</p>
+                <span class="precio">$30.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            
+        </div> 
+</body>
+</html>
+
