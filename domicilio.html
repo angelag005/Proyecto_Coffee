@@ -1,0 +1,84 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffe & time</title>
+    <link rel="stylesheet" href="./CSS/domicilio.css">
+ </head>
+ <body>
+
+
+<form action="menu.html">
+    <div class="logo-form">
+      <img src="./img_Coffee/logo1.jpeg" alt="Logo Coffee">
+     <span>Coffee & Time</span>
+    </div>
+
+    <!-- 👤 Cliente -->
+    <h3>👤 Datos del cliente</h3>
+
+    <label>Nombre completo:</label>
+    <input type="text" name="nombre" required>
+
+    <label>Número de teléfono:</label>
+    <input type="tel" name="telefono" required>
+
+    <!-- 📍 Dirección -->
+    <h3>📍 Dirección de entrega</h3>
+
+    <label>Municipio:</label><br>
+<input type="text" name="municipio" required>
+
+    <label>Dirección (calle, carrera, número):</label>
+    <input type="text" name="direccion" required>
+
+    <label>Barrio:</label>
+    <input type="text" name="barrio" required>
+    
+    <!-- 🏢 Vivienda -->
+    <h3>🏢 Tipo de vivienda</h3>
+
+    <label>Tipo de vivienda:</label>
+    <select name="tipo_vivienda" onchange="mostrarApartamento(this.value)">
+        <option value="casa">Casa</option>
+        <option value="apartamento">Apartamento</option>
+    </select>
+
+    <div id="apartamentoInfo" style="display:none;">
+        <label>Número de piso del a apartamento:</label>
+        <input type="text" name="apartamento">
+    </div>
+
+    <!-- 🏘️ Conjunto -->
+    <h3>🏘️ Información adicional</h3>
+
+    <label>¿Vive en conjunto?</label>
+    <select name="conjunto" onchange="mostrarConjunto(this.value)">
+        <option value="no">No</option>
+        <option value="si">Sí</option>
+    </select>
+
+    <div id="datosConjunto" style="display:none;">
+        <label>Nombre del conjunto:</label>
+        <input type="text" name="nombre_conjunto">
+
+        <label>Dirección del conjunto:</label>
+        <input type="text" name="direccion_conjunto">
+
+        <button type="submit">☕ Continuar al menú</button>
+        <script>
+            
+function mostrarConjunto(valor) {
+    let campo = document.getElementById("datosConjunto");
+    campo.style.display = (valor === "si") ? "block" : "none";
+}
+
+function mostrarApartamento(valor) {
+    let campo = document.getElementById("apartamentoInfo");
+    campo.style.display = (valor === "apartamento") ? "block" : "none";
+}
+</script>
+    </div>
+ </body>
+ </html>
