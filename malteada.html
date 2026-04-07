@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malteadas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/malteada.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo-top">
+            <img src="./IMG/logo.jpeg" alt="logo">
+            <h2>Coffee & Time</h2>
+        </div>
+        <nav class="menu">
+            <a href="#">INICIO</a>
+            <a href="#">QUIENES SOMOS</a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">MENU</a>
+                <div class="dropdown-content">
+                    <a href="./bebidas.html">BEBIDAS</a>
+                    <a href="#">COMIDAS</a>
+                </div>
+            </div>
+            <a href="./domicilio.html">DOMICILIO</a>
+        </nav>
+        <div class="acciones">
+            <a href="InicioSesion.html"><i class="fa-solid fa-user"></i></a>
+            <a href="#" id="btn-carrito">
+                <i class="fa-solid fa-cart-shopping"></i> 
+                <span id="cart-count" class="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <section class="contenedor">
+        <div class="contenedor-items">
+            <div class="articulo" data-nombre="Malteada De Banano" data-presio="7000">
+                <img src="./IMG/banano.jpg" alt="" class="img-item">
+                <span class="titulo-item">Malteada De Banano</span>
+                <p class="descripcion">Deliciosa malteada de banano, suave y cremosa, elaborada con banano natural y leche, perfecta para darte un gusto.</p>
+                <span class="precio">$7.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="articulo" data-nombre="Malteada De Café" data-presio="10000">
+                <img src="./IMG/cafee.jpg" alt="" class="img-item">
+                <span class="titulo-item">Malteada De Café</span>
+                <p class="descripcion">Una irresistible malteada de café, cremosa y refrescante, ideal para disfrutar en cualquier momento del día.</p>
+                <span class="precio">$10.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="articulo" data-nombre="Malteada De Fresa" data-presio="8000">
+                <img src="./IMG/fresa.jpg" alt="" class="img-item">
+                <span class="titulo-item">Malteada De Fresa</span>
+                <p class="descripcion">Malteada de fresa elaborada con leche y fresas frescas, cremosa, refrescante y llena de sabor.</p>
+                <span class="precio">$8.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="articulo" data-nombre="Malteada De Caramelo" data-presio="7000">
+                <img src="./IMG/caramelo.jpg" alt="" class="img-item">
+                <span class="titulo-item">Malteada De Caramelo</span>
+                <p class="descripcion">Deliciosa malteada de caramelo, suave y cremosa, con un sabor dulce que encanta desde el primer sorbo.</p>
+                <span class="precio">$7.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="articulo" data-nombre="Malteada De Chocolate" data-presio="9000">
+                <img src="./IMG/chocolate.jpg" alt="" class="img-item">
+                <span class="titulo-item">Malteada De Chocolate</span>
+                <p class="descripcion">Malteada de chocolate cremosa y refrescante, con un delicioso sabor intenso.</p>
+                <span class="precio">$9.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="articulo" data-nombre="Malteada De Oreo" data-presio="8000">
+                <img src="./IMG/oreo.jpg" alt="" class="img-item">
+                <span class="titulo-item">Malteada De Oreo</span>
+                <p class="descripcion">Malteada de Oreo cremosa y refrescante, con un delicioso sabor a galleta y un toque dulce irresistible.</p>
+                <span class="precio">$8.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="articulo" data-nombre="Malteada De Milo" data-presio="9000">
+                <img src="./IMG/milo.jpg" alt="" class="img-item">
+                <span class="titulo-item">Malteada De Milo</span>
+                <p class="descripcion">Malteada de Milo cremosa y refrescante, con un delicioso sabor achocolatado.</p>
+                <span class="precio">$9.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="articulo" data-nombre="Malteada De Maracuya" data-presio="9000">
+                <img src="./IMG/maraculla.jpg" alt="" class="img-item">
+                <span class="titulo-item">Malteada De Maracuya</span>
+                <p class="descripcion">Malteada de maracuyá cremosa y refrescante, con un delicioso equilibrio entre dulzura y un toque ácido.</p>
+                <span class="precio">$9.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="articulo" data-nombre="Malteada De Vainilla" data-presio="5000">
+                <img src="./IMG/vainilla.jpg" alt="" class="img-item">
+                <span class="titulo-item">Malteada De Vainilla</span>
+                <p class="descripcion">Clásica, suave y cremosa con el delicado sabor de la vainilla natural y un toque dulce irresistible.</p>
+                <span class="precio">$5.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="articulo" data-nombre="Malteada De Arequipe" data-presio="7000">
+                <img src="./IMG/arequipe.jpg" alt="" class="img-item">
+                <span class="titulo-item">Malteada De Arequipe</span>
+                <p class="descripcion">Dulce malteada con el irresistible sabor del arequipe tradicional, ideal para los amantes de lo dulce.</p>
+                <span class="precio">$7.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="articulo" data-nombre="Malteada De Mango" data-presio="7000">
+                <img src="./IMG/mangoo.jpg" alt="" class="img-item">
+                <span class="titulo-item">Malteada De Mango</span>
+                <p class="descripcion">Refrescante Malteada con el dulce sabor natural del mango maduro jugoso, perfecta para días calurosos.</p>
+                <span class="precio">$7.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="articulo" data-nombre="Malteada De Galleta Chokis" data-presio="9000">
+                <img src="./IMG/chokis.jpg" alt="" class="img-item">
+                <span class="titulo-item">Malteada De Galleta Chokis</span>
+                <p class="descripcion">Cremosa malteada con trocitos de galleta, dulce y crocante en cada sorbo perfecto delicioso.</p>
+                <span class="precio">$9.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="articulo" data-nombre="Malteada De Piña Colada" data-presio="9000">
+                <img src="./IMG/colada.jpg" alt="" class="img-item">
+                <span class="titulo-item">Malteada De Piña Colada</span>
+                <p class="descripcion">Tropical y refrescante malteada, mezcla de piña y coco en una textura cremosa suave exótica.</p>
+                <span class="precio">$9.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="articulo" data-nombre="Malteada De Brownie" data-presio="9000">
+                <img src="./IMG/brownie.jpg" alt="" class="img-item">
+                <span class="titulo-item">Malteada De Brownie</span>
+                <p class="descripcion">Espesa y chocolatosa malteada con deliciosos trozos de brownie casero intenso, una opción perfecta.</p>
+                <span class="precio">$9.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="articulo" data-nombre="Malteada De Frutos Rojos" data-presio="8000">
+                <img src="./IMG/rojos.jpg" alt="" class="img-item">
+                <span class="titulo-item">Malteada De Frutos Rojos</span>
+                <p class="descripcion">Refrescante y vibrante malteada con el equilibrio perfecto entre dulce y ácido natural fresco.</p>
+                <span class="precio">$8.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="articulo" data-nombre="Malteada De Kinder" data-presio="10000">
+                <img src="./IMG/kinder.jpg" alt="" class="img-item">
+                <span class="titulo-item">Malteada De Kinder</span>
+                <p class="descripcion">Suave y dulce malteada con el delicioso sabor del chocolate Kinder cremoso irresistible, ideal para darte un gusto.</p>
+                <span class="precio">$10.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+        </div>
+
+        <div class="carro" id="carro">
+            <div class="carro-header">
+            <h2>🛒 Mi Carrito</h2>
+            <span id="cerrar-carrito" class="close-btn">&times;</span>
+        </div>
+        
+        <ul id="lista-carro"></ul>
+        
+        <div class="carro-total">
+            <strong>Total:</strong> $<span id="total">0</span>
+        </div>
+        
+        <button id="pagar-btn">Pagar Ahora</button>
+    </div>
+    </section> 
+    <script src="./JS/carrito.js"></script> 
+</body>
+</html>
+
