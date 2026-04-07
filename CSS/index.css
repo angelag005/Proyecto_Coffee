@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+body {
+    margin: 0;
+    background: #B39977;
+}
+
+.lupa{
+    width: 30px;
+    mix-blend-mode: multiply;
+}
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #F3E9D7;
+}
+
+.logo-top{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	border-radius: 40px;
+}
+
+.logo-top img{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+}
+
+
+.acciones{
+	display: flex;
+	align-items: center;
+	gap:15px;
+	cursor: pointer;
+}
+
+.lupa {
+    width: 30px;
+    mix-blend-mode: multiply;
+}
+
+s.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #F3E9D7;
+}
+
+.logo-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 40px;
+}
+
+.logo-top img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+
+.acciones {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.lupa {
+    width: 40px;
+    align-items: center;
+    gap: 15px;
+
+
+}
+
+.navbar a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #9db1a5;
+    /* color cafecito */
+    color: black;
+    /* color del texto */
+    text-decoration: none;
+    /* quita la línea */
+    border-radius: 25px;
+    /* bordes redondeados */
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+
+/* Contenedor del dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Contenido oculto */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #B39977;
+    min-width: 150px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Links dentro del dropdown */
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* Mostrar cuando pasas el mouse */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* HERO */
+.hero {
+    background: url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085') no-repeat center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    padding: 60px;
+    color: #333;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+    text-decoration: none;  
+    color: white;
+}
+/* WELCOME */
+.welcome {
+    display: flex;
+    padding: 40px;
+    gap: 30px;
+}
+
+.welcome .text {
+    flex: 1;
+    font-size: 29px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+justify-content: center;
+}
+
+.card {
+  background-color: #8B5E3C; /* marrón cálido */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  width: 250px;
+}
+
+.icon {
+    font-size: 60px;
+    margin-bottom: 15px;
+    transition: transform 0.3s;
+}
+
+.card:hover .icon {
+    transform: scale(1.2) rotate(5deg);
+}
+
+/* Animación al cargar */
+.card {
+    animation: aparecer 0.6s ease forwards;
+    opacity: 0;
+}
+
+/* Efecto hover mejorado */
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* Animación */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Botones estilo referencia */
+.card button {
+  background-color: #8B5E3C;   /* fondo blanco */
+  color: #333333;              /* texto oscuro */
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px 22px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;   /* texto en mayúsculas */
+  letter-spacing: 0.5px;       /* espacio entre letras */
+}
+
+/* Hover elegante */
+.card button:hover {
+  background-color: #d4a373;   /* beige/marrón suave */
+  color: #ffffff;              /* texto blanco */
+}
+
+
+.separator span {
+  display: block;
+  width: 500%;          /* largo de la línea */
+  height: 2px;         /* grosor */
+  background-color: #4a3c2a; /* color café */
+  border-radius: 2px;  /* bordes redondeados */
+}
+.separator span {
+  display: block;
+  width: 500%;          /* largo de la línea */
+  height: 2px;         /* grosor */
+  background-color: #4a3c2a; /* color café */
+  border-radius: 2px;  /* bordes redondeados */
+}
+.footer {
+  background-color: #F3E9D7;   /* tono café oscuro */
+  color: #333;              /* beige */
+  padding: 40px 20px;
+  margin-top: 50px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around; /* distribuye las secciones */
+  flex-wrap: wrap;               /* se adapta en pantallas pequeñas */
+  text-align: center;
+}
+
+.footer-about, .footer-hours {
+  max-width: 250px;
+  margin: 15px;
+  font-size: 22px;
+}
+
+.footer h3 {
+  margin-bottom: 10px;
+  font-size: 30px;
+  color: #333;
+}
+.footer-social {
+  margin-top: 20px;
+}
+
+.social-icon {
+  width: 32px;   /* tamaño del icono */
+  height: 32px;
+  margin: 0 10px;
+}
+.footer-note{
+  font-size: 22px;
+}
+
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* BOTON */
+.btn {
+    background: #b39977;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.container {
+  width: 800px;
+  height: 500px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slider {
+  display: flex;
+  width: 400%; /* 4 imágenes */
+  transition: transform 0.6s ease;
+}
+
+.slide {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.slide img {
+  width: 26%;
+  height: auto;
+  display: block;
+}
+
+/* Ocultar radios */
+input[type=radio] {
+  display: none;
+}
+
+/* Control con radios */
+#slider-1:checked ~ .slider-wrapper .slider { transform: translateX(0); }
+#slider-2:checked ~ .slider-wrapper .slider { transform: translateX(-100%); }
+#slider-3:checked ~ .slider-wrapper .slider { transform: translateX(-200%); }
+#slider-4:checked ~ .slider-wrapper .slider { transform: translateX(-300%); }
+
+/* Navegación (círculos) */
+.navigation {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.bar {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ccc;
+  cursor: pointer;
+}
+
+input#slider-1:checked ~ .navigation label[for=slider-1],
+input#slider-2:checked ~ .navigation label[for=slider-2],
+input#slider-3:checked ~ .navigation label[for=slider-3],
+input#slider-4:checked ~ .navigation label[for=slider-4] {
+  background: #4a3c2a;
+}

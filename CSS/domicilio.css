@@ -1,0 +1,166 @@
+/* FONDO GENERAL */
+body {
+    background: linear-gradient(to bottom, #f3e9dc, #e6d3b3);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* TITULO PRINCIPAL */
+h2 {
+    text-align: center;
+    color: #4b2e2e;
+    margin-bottom: 15px;
+}
+
+/* FORMULARIO */
+form {
+    background: #fffaf3;
+    padding: 25px;
+    border-radius: 18px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    border: 2px solid #d2b48c;
+}
+
+/* SUBTITULOS */
+h3 {
+    margin-top: 15px;
+    color: #6b4f4f;
+    border-left: 4px solid #c8a27c;
+    padding-left: 8px;
+}
+
+/* ETIQUETAS */
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #3e2c2c;
+}
+
+/* INPUTS Y SELECT */
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 12px;
+    border: 1px solid #c8a27c;
+    background: #fff;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* EFECTO AL ESCRIBIR */
+input:focus, select:focus {
+    border-color: #8b5e3c;
+    box-shadow: 0 0 8px rgba(139,94,60,0.3);
+}
+
+/* BOTÓN */
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 13px;
+    background: linear-gradient(45deg, #6b4f4f, #8b5e3c);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* HOVER BOTÓN */
+button:hover {
+    background: linear-gradient(45deg, #4a3434, #6b4f4f);
+    transform: scale(1.03);
+}
+
+/* CAMPOS OCULTOS */
+#datosConjunto,
+#apartamentoInfo {
+    margin-top: 10px;
+    padding: 10px;
+    background: #f9f3ea;
+    border-radius: 10px;
+    border: 1px dashed #c8a27c;
+}
+
+/* DETALLE CAFETERÍA */
+.logo-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.logo-form img {
+    width: 40px; /* tamaño del logo */
+    height: 40px;
+    border-radius: 50%;
+}
+
+.logo-form span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #8b5e3c;
+}
+
+/* SECCIÓN APARTAMENTO */
+#apartamentoInfo {
+    margin-top: 15px;
+    padding: 12px;
+    background: #f9f3ea;
+    border-radius: 10px;
+    border: 1px dashed #c8a27c;
+}
+
+/* SECCIÓN CONJUNTO */
+#datosConjunto {
+    margin-top: 15px;
+    padding: 12px;
+    background: #f9f3ea;
+    border-radius: 10px;
+    border: 1px dashed #c8a27c;
+}
+
+/* LABELS DENTRO DE ESTAS SECCIONES */
+#apartamentoInfo label,
+#datosConjunto label {
+    font-size: 14px;
+    color: #5a3e2b;
+}
+
+/* INPUTS DENTRO */
+#apartamentoInfo input,
+#datosConjunto input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #c8a27c;
+}
+
+/* BOTÓN */
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background: linear-gradient(45deg, #6b4f4f, #8b5e3c);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* EFECTO HOVER */
+button:hover {
+    background: linear-gradient(45deg, #4a3434, #6b4f4f);
+    transform: scale(1.03);
+}
