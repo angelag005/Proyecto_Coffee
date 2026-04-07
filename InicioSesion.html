@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/InicioSesion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo-container">
+            <div class="logo-top">
+                <img src="./IMAGENES/logo.jpeg" alt="logo">
+                <div class="text-logo">
+                    <h2>Coffee & Time</h2>
+                </div>
+            </div>
+        </div>
+
+
+        <nav class="menu">
+            <a href="./index.html">INICIO</a>
+            <a href="./quienes_somos.html">QUIENES SOMOS</a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">MENU</a>
+                <div class="dropdown-content">
+                    <a href="#">BEBIDAS</a>
+                    <a href="./SesionPrincipal.html">COMIDAS</a>
+                </div>
+            </div>
+            <a href="./domicilio.html">DOMICILIO</a>
+            <a href="./comentario.html">COMENTARIOS</a>
+        </nav>
+
+        <div class="acciones">
+            <a href="InicioSesion.html"><i class="fa-solid fa-user"></i></a>
+            <span><a href=""><i class="fa-solid fa-heart"></i></a></span>
+            <div class="carrito">
+                <a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="contenedorPrincipal">
+        <div class="contenedor">
+            <div class="logo">
+                <a href=""><img src="./IMAGENES/users.jpeg" alt="foto"></a>
+            </div>
+
+            <div class="correo">
+                <input type="email" placeholder="Correo Electronico" required>
+            </div>
+
+            <div class="contraseña">
+                <input type="password" placeholder="Contraseña" required>
+            </div>
+
+            <button class="boton">Iniciar Sesion</button>
+
+            <div class="registra">
+                <p>No tengo cuenta <a href="./registro.html">Registrarse</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./JS/inicioSesion.js"></script>
+</body>
+</html>

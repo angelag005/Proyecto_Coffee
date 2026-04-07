@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/galletas.css">
+    <title>Galletas</title>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo-container">
+            <div class="logo-top">
+                <img src="./IMAGENES/logo.jpeg" alt="logo">
+                <div class="text-logo">
+                    <h2>Coffee & Time</h2>
+                </div>
+            </div>
+        </div>
+
+        <nav class="menu">
+            <a href="./index.html">INICIO</a>
+            <a href="#">QUIENES SOMOS</a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">MENU</a>
+                <div class="dropdown-content">
+                    <a href="#">BEBIDAS</a>
+                    <a href="SesionPrincipal.html">COMIDAS</a>
+                </div>
+            </div>
+            <a href="./domicilio.html">DOMICILIO</a>
+            <a href="./comentario.html">COMENTARIOS</a>
+        </nav>
+
+        <div class="acciones">
+            <a href="InicioSesion.html"><i class="fa-solid fa-user"></i></a>
+            <a href="#" id="btn-carrito">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-count" class="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <div class="titulo">
+        <H2>Galletas</H2>
+    </div>
+
+    <div class="contenedorPrincipal">
+
+        <div class="contenedor_postres">
+
+            <div class="comida" data-nombre="alletas Osito Dulce" data-precio="4000">
+                <img src="./IMAGENES/Dolce (@daily_dolce) on X.jpg" alt="p1">
+                <h3>Galletas Osito Dulce</h3>
+                <p>Suaves galletas de mantequilla con diseño de osito tierno.</p>
+                <p class="precio">$4.000</p>
+                <button class="agregar">Agregar al Carrito</button>
+            </div>
+
+            <div class="comida" data-nombre="Galletas Kawaii Rellenas" data-precio="5500">
+                <img src="./IMAGENES/descarga (23).jpg" alt="p1">
+                <h3>Galletas Kawaii Rellenas</h3>
+                <p>Deliciosas galletas rellenas con crema dulce y decoradas estilo kawaii.</p>
+                <p class="precio">$5.500</p>
+                <button class="agregar">Agregar al Carrito</button>
+            </div>
+
+            <div class="comida" data-nombre="Mini Sandwich Gatuno" data-precio="5000">
+                <img src="./IMAGENES/descarga (24).jpg" alt="p1">
+                <h3>Mini Sandwich Gatuno</h3>
+                <p>Galletas rellenas con crema, en forma de caritas de gato.</p>
+                <p class="precio">$5.000</p>
+                <button class="agregar">Agregar al Carrito</button>
+            </div>
+
+            <div class="comida"data-nombre="Bocados Gatito Vainilla" data-precio="3500">
+                <img src="./IMAGENES/p6.jpg" alt="p1">
+                <h3>Bocados Gatito Vainilla</h3>
+                <p>Pequeñas galletas crujientes con sabor a vainilla y diseño adorable.</p>
+                <p class="precio">$3.500</p>
+                <button class="agregar">Agregar al Carrito</button>
+            </div>
+
+            <div class="comida"data-nombre="Galletas Gatito Canela" data-precio="4500">
+                <img src="./IMAGENES/p15.jpg" alt="p1">
+                <h3>Galletas Gatito Canela</h3>
+                <p>Galletas con toque de canela y forma de gatitos divertidos.</p>
+                <p class="precio">$4.500</p>
+                <button class="agregar">Agregar al Carrito</button>
+            </div>
+
+            <div class="comida"data-nombre="Galletas Huellitas Dulces" data-precio="4800">
+                <img src="./IMAGENES/ga.jpg" alt="p1">
+                <h3>Galletas Huellitas Dulces</h3>
+                <p>Galletas suaves decoradas con huellas y caritas tiernas.</p>
+                <p class="precio">$4.800</p>
+                <button class="agregar">Agregar al Carrito</button>
+            </div>
+
+            <div class="comida"data-nombre="Galletas Botitas Mix" data-precio="4200">
+                <img src="./IMAGENES/gal.jpg" alt="p1">
+                <h3>Galletas Botitas Mix</h3>
+                <p>Crujientes galletas bicolor con forma de botitas.</p>
+                <p class="precio">$4.200</p>
+                <button class="agregar">Agregar al Carrito</button>
+            </div>
+
+            <div class="comida"data-nombre="Galletas Gatito Clásico" data-precio="4000">
+                <img src="./IMAGENES/galle.jpg" alt="p1">
+                <h3>Galletas Gatito Clásico</h3>
+                <p>Tradicionales galletas de mantequilla con diseño felino.</p>
+                <p class="precio">$4.000</p>
+                <button class="agregar">Agregar al Carrito</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="carro" id="carro">
+        <div class="carro-header">
+            <h2>Mi Carrito</h2>
+            <span id="cerrar-carrito" class="close-btn">&times;</span>
+        </div>
+
+        <ul id="lista-carro"></ul>
+
+        <div class="carro-total">
+            <strong>Total:</strong> $<span id="total">0</span>
+        </div>
+
+        <button id="pagar-btn">Pagar Ahora</button>
+    </div>
+
+    <script src="./CARRITO/carrito.js"></script>
+</body>
+</html>
