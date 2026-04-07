@@ -1,6 +1,106 @@
+body{
+    background-color: #b39977;
+}
+
+.lupa {
+    width: 30px;
+    mix-blend-mode: multiply;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #F3E9D7;
+}
+
+.logo-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 40px;
+}
+
+.logo-top img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+
+.acciones {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.lupa {
+    width: 40px;
+    align-items: center;
+    gap: 15px;
+
+
+}
+
+.navbar a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #9db1a5;
+    /* color cafecito */
+    color: black;
+    /* color del texto */
+    text-decoration: none;
+    /* quita la línea */
+    border-radius: 25px;
+    /* bordes redondeados */
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+
+/* Contenedor del dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Contenido oculto */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #B39977;
+    min-width: 150px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Links dentro del dropdown */
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* Mostrar cuando pasas el mouse */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
 /* FONDO GENERAL */
-body {
-    background: linear-gradient(to bottom, #f3e9dc, #e6d3b3);
+.contenedorDom {
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -163,4 +263,145 @@ button {
 button:hover {
     background: linear-gradient(45deg, #4a3434, #6b4f4f);
     transform: scale(1.03);
+}
+
+
+.footer {
+    background-color: #F3E9D7;
+    /* tono café oscuro */
+    color: #333;
+    /* beige */
+    padding: 40px 20px;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    /* distribuye las secciones */
+    flex-wrap: wrap;
+    /* se adapta en pantallas pequeñas */
+    text-align: center;
+}
+
+.footer-about,
+.footer-hours {
+    max-width: 250px;
+    margin: 15px;
+    font-size: 20px;
+}
+
+.footer-hours h3 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: #333;
+}
+
+.footer-social {
+    margin-top: 20px;
+}
+
+.social-icon {
+    width: 32px;
+    /* tamaño del icono */
+    height: 32px;
+    margin: 0 10px;
+}
+
+.footer-note {
+    font-size: 20px;
+}
+
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* BOTON */
+.btn {
+    background: #b39977;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.container {
+    width: 800px;
+    height: 500px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slider {
+    display: flex;
+    width: 400%;
+    /* 4 imágenes */
+    transition: transform 0.6s ease;
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 26%;
+    height: auto;
+    display: block;
+}
+
+/* Ocultar radios */
+input[type=radio] {
+    display: none;
+}
+
+/* Control con radios */
+#slider-1:checked~.slider-wrapper .slider {
+    transform: translateX(0);
+}
+
+#slider-2:checked~.slider-wrapper .slider {
+    transform: translateX(-100%);
+}
+
+#slider-3:checked~.slider-wrapper .slider {
+    transform: translateX(-200%);
+}
+
+#slider-4:checked~.slider-wrapper .slider {
+    transform: translateX(-300%);
+}
+
+/* Navegación (círculos) */
+.navigation {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.bar {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ccc;
+    cursor: pointer;
+}
+
+input#slider-1:checked~.navigation label[for=slider-1],
+input#slider-2:checked~.navigation label[for=slider-2],
+input#slider-3:checked~.navigation label[for=slider-3],
+input#slider-4:checked~.navigation label[for=slider-4] {
+    background: #4a3c2a;
 }

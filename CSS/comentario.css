@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, sans-serif;
+    font-size: 16px;
+    background: #F3E9D7;
+    margin-top: 20px;
+}
+
+body {
+    margin: 0;
+    background-color: #B39977;
+}
+
+
+.lupa {
+    width: 30px;
+    mix-blend-mode: multiply;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #F3E9D7;
+}
+
+.logo-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 40px;
+}
+
+.logo-top img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+
+.acciones {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.lupa {
+    width: 40px;
+    align-items: center;
+    gap: 15px;
+
+
+}
+
+.navbar a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #9db1a5;
+    /* color cafecito */
+    color: black;
+    /* color del texto */
+    text-decoration: none;
+    /* quita la línea */
+    border-radius: 25px;
+    /* bordes redondeados */
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+
+/* Contenedor del dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Contenido oculto */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #B39977;
+    min-width: 150px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Links dentro del dropdown */
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* Mostrar cuando pasas el mouse */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+.comment-session {
+    width: 650px;
+    margin: 0 auto;
+}
+
+.comment-box, .comment-list {
+    background: #d8b687;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    margin-bottom: 12px;
+    padding: 10px;
+}
+
+.comment-box .user {
+    display: flex;
+    align-items: center;
+}
+
+.comment-box .image img {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.comment-box textarea {
+    width: 100%;
+    height: 120px;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 0 0 0.5px black;
+    resize: none;
+}
+
+.comment-box textarea:focus {
+    outline-color: rgb(155, 115, 73);
+}
+
+.comment-box .comment-submit {
+    float: right;
+    padding: 6px 14px;
+    border: none;
+    background: rgba(135, 108, 73, 0.736);
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.comment-box .comment-submit:hover {
+    background: rgba(80, 64, 43, 0.736);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.comment-list .user {
+    display: flex;
+    align-items: center;
+}
+
+.comment-list .user img {
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.comment-list .name {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.comment-list .day {
+    font-size: 12px;
+    color: gray;
+}
+
+.rating {
+    color: gold;
+    font-size: 18px;
+    display: flex;
+    gap: 3px;
+}
+
+.reply {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #555;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.icon:hover {
+    color: black;
+}

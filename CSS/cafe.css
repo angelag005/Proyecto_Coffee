@@ -1,0 +1,211 @@
+.lupa {
+    width: 30px;
+    mix-blend-mode: multiply;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #F3E9D7;
+}
+
+.logo-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 40px;
+}
+
+.logo-top img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.acciones {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.lupa {
+    width: 40px;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #9db1a5;
+    /* color cafecito */
+    color: black;
+    /* color del texto */
+    text-decoration: none;
+    /* quita la línea */
+    border-radius: 25px;
+    /* bordes redondeados */
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #B39977;
+    min-width: 150px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Links dentro del dropdown */
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* Mostrar cuando pasas el mouse */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* tres columnas */
+    gap: 20px;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+}
+
+.panel {
+    background-color: #B39977; /* tono más claro para contraste */
+    border-radius: 12px;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.panel:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+.panel img {
+   border-radius: 10px;
+    width: 250px;
+    height: 220px;        
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;  
+    padding: 1px;
+    align-items: center;
+}
+
+.panel p {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.panel a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-color: #B39977;
+}
+
+.contenedor {
+    max-width: 1200px;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.contenedor .contenedor-items {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 2fr));
+    grid-gap: 30px;
+    width: 100%;
+    transition: .3s;
+}
+
+.contenedor .contenedor-items .articulo {
+    max-width: 260px;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    transition: .3s;
+    background-color: #B39977;
+    margin-bottom: 20px;
+    border: 2px solid black;
+}
+
+.contenedor .contenedor-items .articulo .img-item {
+    border-radius: 10px;
+    width: 240px;
+    height: 250px;        
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;  
+    padding: 4px;
+    align-items: center;
+}
+
+.contenedor .contenedor-items .articulo .titulo-item {
+    display: block;
+    font-weight: 600;
+    text-align: center;
+    font-size: 17px;
+    color: black;
+    margin-top: 8px;
+}
+
+.contenedor .contenedor-items .articulo .precio-item {
+    display: block;
+    font-weight: 600;
+    text-align: center;
+    font-size: 17px;
+    color: black;
+    margin-top: 8px;
+}
+
+.contenedor .contenedor-items .articulo .boton-item {
+    display: block;
+    margin: 15px auto;
+    background-color:#342519;
+    color: white;
+    padding: 9px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.contenedor .contenedor-items .articulo .like {
+    display: block;
+    margin: 15px auto;
+    background-color:#342519;
+    color: white;
+    padding: 9px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}

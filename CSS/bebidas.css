@@ -1,0 +1,332 @@
+.lupa {
+    width: 30px;
+    mix-blend-mode: multiply;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #F3E9D7;
+}
+
+.logo-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 40px;
+}
+
+.logo-top img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.acciones {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.lupa {
+    width: 40px;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #9db1a5;
+    /* color cafecito */
+    color: black;
+    /* color del texto */
+    text-decoration: none;
+    /* quita la línea */
+    border-radius: 25px;
+    /* bordes redondeados */
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #B39977;
+    min-width: 150px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Links dentro del dropdown */
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* Mostrar cuando pasas el mouse */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* tres columnas */
+    gap: 20px;
+    padding: 40px;
+    background-color: #836444; /* marrón cálido */
+    font-family: Arial, sans-serif;
+}
+
+.panel {
+    background-color: #B39977; /* tono más claro para contraste */
+    border-radius: 12px;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.panel:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+.panel img {
+   border-radius: 10px;
+    width: 250px;
+    height: 220px;        
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;  
+    padding: 1px;
+    align-items: center;
+}
+
+.panel p {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.panel a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fdfdfd;
+    margin: 0;
+    padding: 0;
+}
+    
+.header {
+    text-align: center;
+    padding: 30px;
+    background-color: #6b4f3b;
+    color: white;
+}
+    
+.contenedor2 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+    background-color: #a17f5c;
+}
+
+.card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+    
+.card:hover {
+    transform: translateY(-8px);
+}
+    
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 15px 0 5px;
+    color: #6b4f3b;
+}
+
+.card p {
+    color: #555;
+    font-size: 14px;
+    padding: 0 15px;
+}
+
+.card a {
+    display: inline-block;
+    margin: 15px 0;
+    padding: 10px 20px;
+    background-color: #6b4f3b;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+    
+.card a:hover {
+    background-color: #8b5e3c;
+}
+
+.intro {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #f5f0eb, #e0d3c2);
+    border-radius: 12px;
+    margin: 30px;
+}
+  
+.intro h2 {
+    color: #6b4f3b;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+  
+.intro p {
+    color: #444;
+    font-size: 16px;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+  
+.separador {
+    border: none;
+    height: 3px;
+    width: 80px;
+    background-color: #6b4f3b;
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+/*POPULARES*/
+.contenedorPopulares {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  background-color: #B39977;
+}
+
+/* catedorias */
+.categorias {
+  width: 220px;
+}
+
+.categorias-title {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.categorias-list {
+  list-style: none;
+  padding: 0;
+}
+
+.categorias-item {
+  display: block;
+  padding: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #333;
+  transition: 0.3s;
+}
+
+/* HOVER Y ACTIVO */
+.categorias-item:hover {
+  background: #F3E9D7;
+  color: black;
+}
+
+.categorias-item.active {
+  background: #836444;
+  color: black;
+}
+
+/* CONTENIDO */
+.ContenedorProductos{
+  flex: 1;
+}
+
+.TituloPopulares {
+  text-align: center;
+}
+
+.Productos {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+/* CARD */
+.productitos {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.imagennn {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.contenedorRango {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: white;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+}
+
+.top{
+  display: flex;
+  justify-content: space-between;
+}
+
+.rango {
+  background: #836444;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.likes {
+  background: #836444;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
