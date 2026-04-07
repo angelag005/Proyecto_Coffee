@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jugos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/jugo.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo-container">
+            <div class="logo-top">
+                <img src="./IMG/logo.jpeg" alt="logo">
+                <div class="text-logo">
+                    <h2>Coffee & Time</h2>
+                </div>
+            </div>
+        </div>
+
+        <nav class="menu">
+            <a href="#">INICIO</a>
+            <a href="#">QUIENES SOMOS</a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">MENU</a>
+                <div class="dropdown-content">
+                    <a href="./bebidas.html">BEBIDAS</a>
+                    <a href="#">COMIDAS</a>
+                </div>
+            </div>
+            <a href="./domicilio.html">DOMICILIO</a>
+        </nav>
+
+        <div class="acciones">
+            <a href="./index.html"><i class="fa-solid fa-user"></i></a>
+            <a href="#" id="btn-carrito">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-count" class="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <section class="contenedor">
+        <div class="contenedor-items">
+
+            <div class="articulo" data-nombre="Jugo De Banano" data-precio="4000">
+                <img src="./IMG/bananoo.jpg" alt="" class="img-item">
+                <span class="titulo-item">Jugo De Banano</span>
+                <p class="descripcion">Jugo de banano refrescante y natural, preparado con fruta fresca y un suave toque
+                    dulce.</p>
+                <p class="precio">$4.000</p>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="articulo" data-nombre="Jugo De Fresa" data-precio="4000">
+                <img src="./IMG/fress.jpg" alt="" class="img-item">
+                <span class="titulo-item">Jugo De Fresa</span>
+                <p class="descripcion">Jugo de fresa refrescante y natural, preparado con fruta fresca y un delicioso
+                    toque dulce.</p>
+                <span class="precio">$4.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="articulo" data-nombre="Jugo De Guanabana" data-precio="5000">
+                <img src="./IMG/guanabana.jpg" alt="" class="img-item">
+                <span class="titulo-item">Jugo De Guanabana</span>
+                <p class="descripcion">Jugo de guanábana suave y cremoso, elaborado con fruta natural y un sabor dulce
+                    que encanta.</p>
+                <span class="precio">$5.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="articulo" data-nombre="Juego De Guayaba" data-precio="4000">
+                <img src="./IMG/guayaba.jpg" alt="" class="img-item">
+                <span class="titulo-item">Juego De Guayaba</span>
+                <p class="descripcion">Jugo de guayaba dulce y refrescante, preparado con fruta natural y un sabor
+                    intenso que encanta.</p>
+                <span class="precio">$4.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="articulo" data-nombre="ugo De Mango" data-precio="5000">
+                <img src="./IMG/mango.jpg" alt="" class="img-item">
+                <span class="titulo-item">Jugo De Mango</span>
+                <p class="descripcion">Jugo de mango jugoso y refrescante, preparado con fruta natural y un toque dulce
+                    tropical.</p>
+                <span class="precio">$5.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="articulo" data-nombre="Jugo De Maracuya" data-precio="6000">
+                <img src="./IMG/maracuya.jpg" alt="" class="img-item">
+                <span class="titulo-item">Jugo De Maracuya</span>
+                <p class="descripcion">Jugo de maracuyá refrescante y vibrante, con el equilibrio perfecto entre acidez
+                    y dulzura natural.</p>
+                <span class="precio">$6.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="articulo" data-nombre="Jugo De Mora" data-precio="5000">
+                <img src="./IMG/mora.jpg" alt="" class="img-item">
+                <span class="titulo-item">Jugo De Mora</span>
+                <p class="descripcion">Jugo de mora refrescante y lleno de sabor, con un toque dulce y ligeramente ácido
+                    que encanta.</p>
+                <span class="precio">$5.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="articulo" data-nombre="Jugo De Naranja" data-precio="4000">
+                <img src="./IMG/naranja.jpg" alt="" class="img-item">
+                <span class="titulo-item">Jugo De Naranja</span>
+                <p class="descripcion">Jugo de naranja fresco y natural, con un sabor cítrico y refrescante perfecto
+                    para cualquier momento.</p>
+                <span class="precio">$4.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="articulo" data-nombre="Jugo De Piña" data-precio=4000">
+                <img src="./IMG/piña.jpg" alt="" class="img-item">
+                <span class="titulo-item">Jugo De Piña</span>
+                <p class="descripcion">Jugo de piña fresco y tropical, con un sabor dulce y ligeramente ácido que
+                    refresca al instante.</p>
+                <span class="precio">$4.800</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="articulo" data-nombre="Jugo De Sandia" data-precio="5000">
+                <img src="./IMG/sandida.jpg" alt="" class="img-item">
+                <span class="titulo-item">Jugo De Sandia</span>
+                <p class="descripcion">Jugo de sandía fresco y ligero, con un sabor dulce y refrescante ideal para el
+                    calor.</p>
+                <span class="precio">$5.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="articulo" data-nombre="Jugo De Uva" data-precio="4000">
+                <img src="./IMG/uva.jpg" alt="" class="img-item">
+                <span class="titulo-item">Jugo De Uva</span>
+                <p class="descripcion">Refrescante jugo de uva, dulce y suave, con un sabor natural intenso que encanta
+                    en cada sorbo.</p>
+                <span class="precio">$4.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="articulo" data-nombre="Jugo De Tomate De Arbol" data-precio="3000">
+                <img src="./IMG/tomate.jpg" alt="" class="img-item">
+                <span class="titulo-item">Jugo De Tomate De Arbol</span>
+                <p class="descripcion">Exótico jugo de tomate de árbol, con un equilibrio entre dulce y ácido, perfecto
+                    para refrescarte.</p>
+                <span class="precio">$3.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="articulo" data-nombre="Jugo De Toronja" data-precio="5000">
+                <img src="./IMG/toronja.jpg" alt="" class="img-item">
+                <span class="titulo-item">Jugo De Toronja</span>
+                <p class="descripcion">Jugo de toronja refrescante, con un toque cítrico y ligeramente amargo que
+                    despierta los sentidos.</p>
+                <span class="precio">$5.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="articulo" data-nombre="Jugo De Carambola" data-precio="4000">
+                <img src="./IMG/carambola.jpg" alt="" class="img-item">
+                <span class="titulo">Jugo De Carambola</span>
+                <p class="descripcion">Delicado jugo de carambola, suave y refrescante, con un sabor tropical ligero y
+                    agradable.</p>
+                <span class="precio">$4.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="articulo" data-nombre="Jugo De Aguayaba Agrida" data-precio="4000">
+                <img src="./IMG/agrida.png" alt="" class="img-item">
+                <span class="titulo-item">Jugo De Aguayaba Agrida</span>
+                <p class="descripcion">Jugo de guayaba agria, intenso y refrescante, con ese toque ácido que lo hace
+                    único y delicioso.</p>
+                <span class="precio">$4.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="articulo" data-nombre="Jugo De Lulo" data-precio="4000">
+                <img src="./IMG/lulo.jpg" alt="" class="img-item">
+                <span class="titulo-item">Jugo De Lulo</span>
+                <p class="descripcion">Clásico jugo de lulo, refrescante y vibrante, con el equilibrio perfecto entre
+                    dulce y ácido natural.</p>
+                <span class="precio">$4.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="carro" id="carro">
+        <div class="carro-header">
+            <h2>🛒 Mi Carrito</h2>
+            <span id="cerrar-carrito" class="close-btn">&times;</span>
+        </div>
+
+        <ul id="lista-carro"></ul>
+
+        <div class="carro-total">
+            <strong>Total:</strong> $<span id="total">0</span>
+        </div>
+
+        <button id="pagar-btn">Pagar Ahora</button>
+    </div>
+
+    <script src="./JS/carrito.js"></script>
+</body>
+
+</html>
